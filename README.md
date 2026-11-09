@@ -1,27 +1,21 @@
-<p align="center">
-  <img src="assets/hero-banner.png" alt="JobCraft AI Hero Banner" width="100%" />
-</p>
+# JobCraft AI
 
-<p align="center">
-  <img src="assets/logo.png" alt="JobCraft Logo" width="100" height="100" />
-</p>
+![JobCraft AI](assets/jobcraft-hero.png)
 
-<h1 align="center">JobCraft AI</h1>
+<div align="center">
 
-<p align="center">
-  <strong>The Autonomous AI Career Engine, Real-time Job Radar &amp; Application Studio.</strong><br>
-  <em>Stop sending resumes into a black hole. Craft your career advancement with precision automation.</em>
-</p>
+> **The Autonomous AI Career Engine, Real-time Job Radar &amp; Application Studio.**  
+> *Craft your career advancement with precision automation. 100% local, private, and zero database leaks.*
 
-<p align="center">
-  <a href="#-highlights--feature-matrix"><img src="https://img.shields.io/badge/Status-Production%20Ready-success?style=flat-square&logo=rocket" alt="Status" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square&logo=open-source-initiative" alt="License" /></a>
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" /></a>
-  <a href="https://aistudio.google.com/"><img src="https://img.shields.io/badge/AI_Engine-Gemini%20Flash-4285F4?style=flat-square&logo=google" alt="Gemini" /></a>
-  <a href="#-chrome-extension-installation"><img src="https://img.shields.io/badge/Chrome_Extension-Manifest_v3-yellow?style=flat-square&logo=googlechrome&logoColor=white" alt="Extension" /></a>
-  <a href="#️-privacy--zero-database-architecture"><img src="https://img.shields.io/badge/Privacy-100%25%20Local-blueviolet?style=flat-square&logo=shield" alt="Privacy" /></a>
-  <a href="#-cloud--container-deployment"><img src="https://img.shields.io/badge/Deploy-Docker%20%7C%20Render-555555?style=flat-square&logo=docker" alt="Deploy" /></a>
-</p>
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-success.svg)](#-highlights--feature-matrix)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
+[![AI Engine](https://img.shields.io/badge/AI-Google_Gemini-4285F4.svg)](https://aistudio.google.com/)
+[![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-Manifest_v3-yellow.svg)](#-chrome-extension-installation)
+[![Privacy](https://img.shields.io/badge/Privacy-100%25_Local-blueviolet.svg)](#️-privacy--zero-database-architecture)
+[![Deploy](https://img.shields.io/badge/Deploy-Docker%20%7C%20Render-555555.svg)](#-cloud--container-deployment)
+
+</div>
 
 ---
 
@@ -245,9 +239,7 @@ flowchart LR
 - Automatically inspects LinkedIn job postings with 1 click and seamlessly syncs with your Web Studio.
 - Auto-packaged on server startup with zero external build tools required.
 
-<p align="center">
-  <img src="assets/screenshots/08_chrome_extension.png" alt="JobCraft Chrome Extension" width="420" />
-</p>
+![JobCraft Chrome Extension](assets/screenshots/08_chrome_extension.png)
 
 ---
 
@@ -399,8 +391,8 @@ pm2 startup
 JobCraft/
 ├── .agents/                    # Agentic CLI search skills (FreeHire, Jobnet, JobIndex)
 ├── assets/                     # Visual assets & documentation media
-│   ├── hero-banner.png         # High-resolution retina header banner
-│   ├── logo.png                # Transparent JobCraft falcon emblem logo
+│   ├── jobcraft-hero.png       # High-resolution retina header banner
+│   ├── jobcraft-logo.png       # Transparent JobCraft falcon emblem logo
 │   └── screenshots/            # 8 retina screenshots of live application views
 ├── deploy/                     # Production deployment templates (Nginx, Caddy)
 │   ├── nginx.conf              # Production Nginx reverse proxy template
