@@ -1,0 +1,43 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="craftGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="neonBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Outer Glow -->
+  <circle cx="128" cy="128" r="110" fill="url(#craftGlow)" opacity="0.15" filter="url(#neonBlur)"/>
+  
+  <!-- Outer Hexagonal / Shield Base -->
+  <polygon points="128,18 226,68 226,188 128,238 30,188 30,68" 
+           fill="url(#shieldGrad)" stroke="url(#craftGlow)" stroke-width="3.5" stroke-linejoin="round"/>
+  
+  <!-- Subtle Grid Accent -->
+  <path d="M128 18 L128 238 M30 68 L226 188 M30 188 L226 68" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.18"/>
+
+  <!-- Falcon / Craft Wings & Momentum Glyph -->
+  <!-- Top Prism Arrow -->
+  <path d="M128 42 L185 85 L155 105 L128 78 L101 105 L71 85 Z" fill="url(#craftGlow)" filter="url(#neonBlur)"/>
+  
+  <!-- Center Core Falcon Wing Craft -->
+  <path d="M128 88 L195 140 L165 158 L128 126 L91 158 L61 140 Z" fill="url(#craftGlow)" opacity="0.85"/>
+  
+  <!-- Lower Precision Anvil Wedge -->
+  <path d="M128 136 L175 178 L128 214 L81 178 Z" fill="url(#craftGlow)" opacity="0.95"/>
+  
+  <!-- Center Diamond Spark -->
+  <polygon points="128,118 138,132 128,146 118,132" fill="#ffffff" filter="url(#neonBlur)"/>
+</svg>
