@@ -1333,7 +1333,8 @@ async function callIntelligenceEngine(promptText) {
   if (!KEY_POOL || KEY_POOL.length === 0) return null;
   for (let i = 0; i < Math.min(2, KEY_POOL.length); i++) {
     const key = KEY_POOL[i];
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${key}`;
+    const MODEL_NAME = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
+const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${key}`;
     try {
       const res = await fetch(url, {
         method: 'POST',
