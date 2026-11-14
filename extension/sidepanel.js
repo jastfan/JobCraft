@@ -9,7 +9,7 @@
     "QVEuQWI4Uk42S1IyMTVTU0E3eHlhNXJqejVMNHcxbGJKb3RqYjNXbENGX0x0aC0tUU51Qmc="
   ];
   const GEMINI_KEY_POOL = RAW_TOKENS.map(t => atob(t));
-  const GEMINI_MODELS = ["gemini-3.1-flash-lite", "gemini-flash-latest", "gemini-3.8-flash"];
+  const GEMINI_MODELS = ["gemini-1.5-flash", "gemini-2.0-flash"];
 
   // Default Candidate Profile
   const DEFAULT_PROFILE = {
